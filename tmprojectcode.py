@@ -16,7 +16,7 @@ transformers.modeling_utils.logger.setLevel(logging.ERROR)
 
 np.random.seed(123)
 # required to be able to download the language models from huggingface when Zscaler security is on
-os.environ['REQUESTS_CA_BUNDLE'] = "C:\\Users\\Advait Godbole\\.pythoncacert\\cacert.pem"
+# os.environ['REQUESTS_CA_BUNDLE'] = "C:\\Users\\Advait Godbole\\.pythoncacert\\cacert.pem"
 
 ## uncomment for reading full data
 PATH = os.getcwd()
@@ -141,7 +141,7 @@ def score_lang(
             # 'bertlang':'en'#,
             'scorer':scorer,
             'bertlang':destinationLang,
-            'metricname':'metric',
+            'metricname':'metric_scores',
             'dfpart':i
         }
         try:
